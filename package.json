@@ -1,0 +1,17 @@
+{
+  "name": "shindig-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A syntax theme to go with keithjgrant.com",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "shindig"
+  ],
+  "repository": "https://github.com/keithjgrant/shindig-atom-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

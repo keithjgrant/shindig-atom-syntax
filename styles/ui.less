@@ -1,0 +1,75 @@
+/* TODO: move these all to a UI theme */
+
+.status-added,
+.status-added > li,
+.status-added > .list-item {
+  color: @green-5 !important;
+}
+
+.status-modified,
+.status-modified > li,
+.status-modified > .list-item {
+  color: @yellow-5 !important;
+}
+
+
+atom-text-editor.editor .linter-highlight.linter-error.linter-gutter,
+.linter-highlight.linter-error.linter-gutter {
+  color: @red-5 !important;
+}
+atom-text-editor.editor .linter-highlight.linter-error .region,
+.linter-highlight.linter-error .region {
+    background-image:
+      linear-gradient(45deg, transparent 65%, @red-5 80%, transparent 90%),
+      linear-gradient(135deg, transparent 5%, @red-5 15%, transparent 25%),
+      linear-gradient(135deg, transparent 45%, @red-5 55%, transparent 65%),
+      linear-gradient(45deg, transparent 25%, @red-5 35%, transparent 50%) !important;
+}
+atom-text-editor.editor .linter-highlight.linter-warning.linter-gutter,
+.linter-highlight.linter-warning.linter-gutter {
+  color: @yellow-5 !important;
+}
+atom-text-editor.editor .linter-highlight.linter-warning .region,
+.linter-highlight.linter-warning .region {
+  background-image:
+    linear-gradient(45deg, transparent 65%, @yellow-5 80%, transparent 90%),
+    linear-gradient(135deg, transparent 5%, @yellow-5 15%, transparent 25%),
+    linear-gradient(135deg, transparent 45%, @yellow-5 55%, transparent 65%),
+    linear-gradient(45deg, transparent 25%, @yellow-5 35%, transparent 50%) !important;
+}
+
+// .tab-bar .tab.modified:not(:hover) .close-icon,
+// .tab-bar .syntax--tab.syntax--modified:not(:hover) .close {
+//   color: @blue-4 !important;
+// }
+
+.list-group .icon::before,
+.list-tree .icon::before {
+  vertical-align: 0 !important;
+}
+
+atom-workspace {
+  font-family: Optima;
+  font-weight: 300;
+}
+atom-text-editor {
+  letter-spacing: initial;
+}
+
+atom-text-editor[mini],
+.btn {
+  border-radius: 0 !important;
+}
+
+.tree-view .list-group li:not(.list-nested-item),
+.tree-view .list-tree li:not(.list-nested-item),
+.tree-view .list-group li.list-nested-item > .list-item,
+.tree-view .list-tree li.list-nested-item > .list-item {
+  font-family: Optima !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.02em;
+  line-height: 2 !important;
+}
+.icon::before {
+  font-size: 1em !important;
+}

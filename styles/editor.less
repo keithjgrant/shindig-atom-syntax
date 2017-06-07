@@ -1,0 +1,82 @@
+@import "./colors";
+
+atom-text-editor {
+  color: @gray-8;
+  background-color: @syntax-background-color;
+
+  .gutter-container {
+    background-color: @syntax-background-color;
+  }
+
+  .gutter {
+    color: @decoration_light;
+
+    .line-number {
+      opacity: 1;
+
+      &.cursor-line {
+        color: @purpose_user_current_state;
+        background-color: @gray-3;
+      }
+    }
+  }
+
+  .invisible-character {
+    color: @purpose_trivial;
+  }
+
+  .indent-guide {
+    color: @decoration_medium;
+  }
+
+  .wrap-guide {
+    background-color: @decoration_medium;
+  }
+
+  .lines .line.cursor-line {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .selection .region {
+    background-color: @purpose_user_current_state;
+    opacity: 0.5;
+  }
+
+  .bracket-matcher .region {
+    border: none;
+    outline: 1px dotted @purpose_user_current_state;
+  }
+
+  .spell-check-misspelling .region {
+    border: none;
+    outline: 1px dotted @purpose_user_action_needed;
+  }
+
+  .fold-marker:after,
+  .gutter .line-number.folded {
+    color: @purpose_user_current_state;
+  }
+
+  .bracket-matcher .region {
+    border-color: @purpose_user_current_state;
+  }
+
+  .scrollbars-visible-always {
+    /deep/ ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    /deep/ ::-webkit-scrollbar-track,
+    /deep/ ::-webkit-scrollbar-corner {
+      background: @decoration_light;
+    }
+
+    /deep/ ::-webkit-scrollbar-thumb,
+    /deep/ ::-webkit-scrollbar-thumb:hover {
+      background: @purpose_user_current_state;
+      border-radius: 5px;
+      box-shadow: 0;
+    }
+  }
+}
