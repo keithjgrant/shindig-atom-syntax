@@ -1,10 +1,14 @@
 /* TODO: move these all to a UI theme */
 
-.status-added, .status-added > li, .status-added > .list-item {
+.status-added,
+.status-added > li,
+.status-added > .list-item {
   color: @green-5 !important;
 }
 
-.status-modified, .status-modified > li, .status-modified > .list-item {
+.status-modified,
+.status-modified > li,
+.status-modified > .list-item {
   color: @yellow-5 !important;
 }
 
@@ -14,7 +18,12 @@ atom-text-editor.editor .linter-highlight.linter-error.linter-gutter,
 }
 atom-text-editor.editor .linter-highlight.linter-error .region,
 .linter-highlight.linter-error .region {
-  background-image: linear-gradient(45deg, transparent 65%, @red-5 80%, transparent 90%),
+  background-image: linear-gradient(
+      45deg,
+      transparent 65%,
+      @red-5 80%,
+      transparent 90%
+    ),
     linear-gradient(135deg, transparent 5%, @red-5 15%, transparent 25%),
     linear-gradient(135deg, transparent 45%, @red-5 55%, transparent 65%),
     linear-gradient(45deg, transparent 25%, @red-5 35%, transparent 50%) !important;
@@ -41,19 +50,21 @@ atom-text-editor.editor .linter-highlight.linter-warning .region,
 //   color: @blue-4 !important;
 // }
 
-.list-group .icon::before, .list-tree .icon::before {
+.list-group .icon::before,
+.list-tree .icon::before {
   vertical-align: 0 !important;
 }
 
 atom-workspace {
-  font-family: Fira Sans, sans-serif;
+  font-family: Glober, Fira Sans, sans-serif;
   font-size: 1.1rem;
 }
 atom-text-editor {
   letter-spacing: initial;
 }
 
-atom-text-editor[mini], .btn {
+atom-text-editor[mini],
+.btn {
   border-radius: 0 !important;
 }
 
@@ -61,7 +72,7 @@ atom-text-editor[mini], .btn {
 .tree-view .list-tree li:not(.list-nested-item),
 .tree-view .list-group li.list-nested-item > .list-item,
 .tree-view .list-tree li.list-nested-item > .list-item {
-  font-family: Fira Sans, Work Sans, sans-serif !important;
+  font-family: Glober, Fira Sans, sans-serif !important;
   font-weight: 200 !important;
   font-size: 1.1rem !important;
   line-height: 1.7 !important;
