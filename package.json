@@ -1,7 +1,7 @@
 {
   "name": "shindig-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A syntax theme to go with keithjgrant.com",
   "keywords": [
     "syntax",
