@@ -1,6 +1,6 @@
 # Shindig-syntax theme for Atom
 
-A syntax theme to work in conjunction with keithjgrant.com (upcoming redesign). A work in progress.
+A syntax theme to work in conjunction with keithjgrant.com.
 
 ### Language &bull; `JavaScript`
 ![Screenshot of Javascript code](screenshot-javascript.png)
