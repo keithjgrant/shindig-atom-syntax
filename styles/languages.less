@@ -65,7 +65,6 @@
 // TYPE
 .syntax--nan,
 .syntax--null,
-.syntax--storage,
 .syntax--undefined,
 .syntax--html.syntax--tag {
   color: @purpose_type;
@@ -113,6 +112,7 @@
 }
 
 .syntax--arrow,
+.syntax--storage, /* `var`, `let`, `const` */
 .syntax--css.syntax--function {
   color: @purpose_trivial-2;
 }
@@ -172,9 +172,10 @@
 
 /* JS */
 .syntax--js.syntax--this {
-  color: @red-5;
+  color: @gray-8;
 }
-.syntax--js.syntax--method {
+.syntax--js.syntax--method,
+.syntax--js.syntax--name {
   color: @purpose_special;
 }
 .syntax--jsx.syntax--tag {
